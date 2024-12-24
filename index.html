@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="mediaqueri.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="logo">Lisa</div>
+      <div class="list">
+        <ul class="list-items">
+          <li><a href="#">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Lisa</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links" onclick="toggleMenu()">
+          <li><a href="#" onclick="toggleMenu()">Home</a></li>
+          <li><a href="/about" onclick="toggleMenu()">About</a></li>
+          <li><a href="/projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="/contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="box">
+        <img src="assets/image.jpg" alt="image" />
+      </div>
+      <div class="box-content">
+        <h1>Hii I'm Lisa</h1>
+        <p>I am web developer</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur
+          doloribus, suscipit iure eveniet reprehenderit recusandae rerum nulla
+          eaque accusamus ex?
+        </p>
+        <button
+          class="btn"
+          onclick="window.open('./assets/arya_fullstack_fresher.pdf')"
+        >
+          Resume
+        </button>
+        <button class="btn">Contact</button>
+      </div>
+    </div>
+
+    <img
+      src="./assets/arrow.png"
+      alt="down"
+      class="icon-arrow"
+      onclick="location.href='/about'"
+    />
+
+    <div class="heading">
+      <h1>About me</h1>
+    </div>
+    <div class="about-container">
+      <section class="about">
+        <div class="about">
+          <div class="about-image">
+            <img src="./assets/about-img.png" alt="" />
+          </div>
+          <div class="about-content">
+            <h2>Experience</h2>
+            <div class="experience-img">
+              <img src="./assets/experience-img.png" alt="" />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+              odit!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              quaerat autem fugit sequi, velit laudantium expedita sapiente
+              officia doloremque at!
+            </p>
+          </div>
+          <div class="about-content">
+            <h2>Education</h2>
+            <div class="education-img">
+              <img src="./assets/education.png" alt="" />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+              odit!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              velit eaque amet omnis quisquam aspernatur odit unde voluptate
+              excepturi doloremque.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="down"
+      class="icon-arrow"
+      onclick="location.href='/projects'"
+    />
+
+    <div class="heading">
+      <h1>My Work</h1>
+    </div>
+    <section id="project">
+      <div class="project-container">
+        <div class="project-cards">
+          <img
+            src="./assets/project-img.jpg"
+            alt="project 1"
+            class="project-img"
+          />
+          <h3>project 1</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+          <a href="">Github link</a>
+        </div>
+        <div class="project-cards">
+          <img
+            src="./assets/project-img.jpg"
+            alt="project 2"
+            class="project-img"
+          />
+          <h3>project 2</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+          </p>
+          <a href="">Github link</a>
+        </div>
+        <div class="project-cards">
+          <img
+            src="./assets/project-img.jpg"
+            alt="project 3"
+            class="project-img"
+          />
+          <h3>project 3</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+          <a href="">Github link</a>
+        </div>
+      </div>
+    </section>
+    <img
+      src="./assets/arrow.png"
+      alt="down"
+      class="icon-arrow"
+      onclick="location.href='/contact'"
+    />
+    <script src="script.js"></script>
+  </body>
+</html>
