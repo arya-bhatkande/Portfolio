@@ -14,6 +14,7 @@
         <ul class="list-items">
           <li><a href="#">Home</a></li>
           <li><a href="/about">About</a></li>
+          <li><a href="/experience">Experience</a></li>
           <li><a href="/projects">Projects</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
@@ -30,6 +31,7 @@
         <div class="menu-links" onclick="toggleMenu()">
           <li><a href="#" onclick="toggleMenu()">Home</a></li>
           <li><a href="/about" onclick="toggleMenu()">About</a></li>
+          <li><a href="/experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="/projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="/contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -56,52 +58,49 @@
         <button class="btn">Contact</button>
       </div>
     </div>
-
     <img
       src="./assets/arrow.png"
       alt="down"
       class="icon-arrow"
-      onclick="location.href='/about'"
+      onclick="location.href=''"
     />
-
     <div class="heading">
       <h1>About me</h1>
     </div>
     <div class="about-container">
-      <section class="about">
+      <section id="about">
         <div class="about">
           <div class="about-image">
             <img src="./assets/about-img.png" alt="" />
           </div>
           <div class="about-content">
-            <h2>Experience</h2>
-            <div class="experience-img">
+            <div class="about-icon">
               <img src="./assets/experience-img.png" alt="" />
+              <h2>Experience</h2>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
               odit!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-              quaerat autem fugit sequi, velit laudantium expedita sapiente
-              officia doloremque at!
             </p>
           </div>
           <div class="about-content">
-            <h2>Education</h2>
-            <div class="education-img">
+            <div class="about-icon">
               <img src="./assets/education.png" alt="" />
+              <h2>Education</h2>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
               odit!
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              velit eaque amet omnis quisquam aspernatur odit unde voluptate
-              excepturi doloremque.
-            </p>
+          </div>
+          <div class="about-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit soluta
+            repellat omnis quisquam optio repudiandae numquam? Excepturi
+            voluptatum magni doloribus necessitatibus praesentium? Corrupti
+            doloribus, minima quos, dolorem odit esse aspernatur cupiditate
+            tempora maiores ut id soluta a error autem veniam unde atque facere
+            numquam, ratione debitis consequatur. Similique, excepturi
+            explicabo.
           </div>
         </div>
       </section>
@@ -110,8 +109,104 @@
       src="./assets/arrow.png"
       alt="down"
       class="icon-arrow"
-      onclick="location.href='/projects'"
+      onclick="location.href='./projects'"
     />
+    <div class="heading">
+      <h1>Experience</h1>
+    </div>
+    <section id="experience">
+      <div class="experience-details">
+        <div class="experience-about">
+          <div class="experience-content">
+            <h2 class="exp-title">Frontend Development</h2>
+            <div class="article">
+              <article>
+                <img src="./assets/checked.png" alt="experience" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <span>Experienced</span>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checked.png" alt="experience" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <span>Experienced</span>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checked.png" alt="experience" class="icon" />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <span>Experienced</span>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checked.png" alt="experience" class="icon" />
+                <div>
+                  <h3>Javascript</h3>
+                  <span>Experienced</span>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checked.png" alt="experience" class="icon" />
+                <div>
+                  <h3>React.js</h3>
+                  <span>Experienced</span>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checked.png" alt="experience" class="icon" />
+                <div>
+                  <h3>Tailwind CSS</h3>
+                  <span>Intermediate</span>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="experience-content">
+            <h2 class="exp-title">Backend Development</h2>
+            <div class="article">
+              <article>
+                <img src="./assets/checked.png" alt="experience" class="icon" />
+                <div>
+                  <h3>Node Js</h3>
+                  <span>Experienced</span>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checked.png" alt="experience" class="icon" />
+                <div>
+                  <h3>Express js</h3>
+                  <span>Experienced</span>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checked.png" alt="experience" class="icon" />
+                <div>
+                  <h3>MongoDB</h3>
+                  <span>Experienced</span>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checked.png" alt="experience" class="icon" />
+                <div>
+                  <h3>MySQL</h3>
+                  <span>Intermediate</span>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checked.png" alt="experience" class="icon" />
+                <div>
+                  <h3>Git</h3>
+                  <span>Experienced</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <div class="heading">
       <h1>My Work</h1>
@@ -125,9 +220,7 @@
             class="project-img"
           />
           <h3>project 1</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          </p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
           <a href="">Github link</a>
         </div>
         <div class="project-cards">
@@ -137,9 +230,7 @@
             class="project-img"
           />
           <h3>project 2</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-          </p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
           <a href="">Github link</a>
         </div>
         <div class="project-cards">
@@ -149,9 +240,7 @@
             class="project-img"
           />
           <h3>project 3</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          </p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
           <a href="">Github link</a>
         </div>
       </div>
@@ -160,8 +249,9 @@
       src="./assets/arrow.png"
       alt="down"
       class="icon-arrow"
-      onclick="location.href='/contact'"
+      onclick="location.href='./contact'"
     />
+    
     <script src="script.js"></script>
   </body>
 </html>

@@ -17,6 +17,10 @@
         max-width: 300px; /* Reduce image size for smaller devices */
     }
 
+    .box-content{
+        width: 100%;
+        margin: 10px;
+    }
     .about{
         padding: 20px;
         flex-direction: column;
@@ -27,12 +31,25 @@
     }
 
     .project-container {
-        margin: 0 auto;
-        justify-content: center; /* Centers the items horizontally */
+        /* margin: 0 auto; */
+        justify-content: center;
+        flex-direction: column; 
+       
+    }
+    .project-cards{
+        width: 100%;
+       
     }
 
-  
+  .experience-content{
+    margin-left: 50px;
+    margin-top: 5px;
+    width: 70%;
+   
+  }
     
-
+  .experience-about{
+    flex-direction: column;
+  }
 
 }

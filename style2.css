@@ -180,7 +180,7 @@ a,
   text-align: center; /* Center-align text */
 }
 
-.box-content{
+.box-content {
   width: 50%;
 }
 .box img {
@@ -367,16 +367,58 @@ p {
 
 .about-content {
   flex: 1;
+  border: 1px solid black;
 }
 
-.icon-arrow{
-position: absolute;
-right: 2rem;
+.about-icon {
+  margin: 30px;
+  display: flex;
+  gap: 2rem;
+}
+
+.icon-arrow {
+  position: absolute;
+  right: 2rem;
+}
+
+.experience-about {
+  display: flex;
+  justify-content: center;
+}
+
+.experience-content {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 90px;
+  width: 30%;
+}
+.article {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  gap: 0.5rem;
+  justify-content: space-around;
+}
+
+.icon {
+  cursor: default;
+  width: 34px;
+  height: 34px;
 }
 
 .project-container {
   margin: 0 auto;
-  justify-content: center; 
+  justify-content: center;
   width: 100%;
   display: flex;
   gap: 10px;
@@ -403,3 +445,6 @@ right: 2rem;
   object-fit: cover; /* Ensures the image maintains aspect ratio */
 }
 
+.project-cards > a {
+  color: white;
+}
