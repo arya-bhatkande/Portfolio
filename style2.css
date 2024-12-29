@@ -34,12 +34,12 @@ nav {
   animation: fadeIn 1s ease-in-out;
 }
 
-.logo {
+/* .logo {
   font-size: 1.8rem;
   color: white;
   cursor: default;
   animation: slideInLeft 1s ease-in-out;
-}
+} */
 
 .list-items {
   list-style: none;
@@ -308,7 +308,7 @@ p {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  margin: 40px auto;
+  margin: 30px auto;
   padding: 10px;
 }
 
@@ -348,6 +348,7 @@ p {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+  height: 70vh;
 }
 
 .about-image {
@@ -445,6 +446,100 @@ article {
   object-fit: cover; /* Ensures the image maintains aspect ratio */
 }
 
-.project-cards > a {
+.pro-btn > a {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+.pro-btn {
+  background: transparent;
+  border-radius: 10px;
+  height: 40px;
+  width: 80px;
+}
+
+#contact {
+  height: 90vh;
+}
+.con-container {
+  display: flex;
+  border: 0.1rem solid black;
+  border-radius: 2rem;
+  width: 55%;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0.1, 0.1, 0.1, 0.1); /* Soft shadow */
+}
+
+.con-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem;
+  flex-wrap: wrap;
+}
+
+.con-info > p > a {
   color: white;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.con-info > p > a:hover {
+  color: #ffcc00; /* Highlight color */
+  text-shadow: 0 0 5px rgba(255, 204, 0, 0.8); /* Subtle glow effect */
+}
+
+nav,
+.list-items1 {
+  display: flex;
+}
+
+footer {
+  justify-content: space-around;
+  height: 15vh;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+ 
+  animation: fadeIn 1s ease-in-out;
+}
+
+.list-items1 {
+  list-style: none;
+  gap: 2rem;
+  font-size: 1.2rem;
+  animation: slideInRight 1s ease-in-out;
+}
+
+.list-items1 a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.list-items1 a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgba(181, 181, 181);
+}
+
+.list-items1 a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: grey;
+  transition: width 0.3s ease-in-out;
+}
+
+.list-items1 a:hover::after {
+  width: 100%;
 }

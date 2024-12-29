@@ -13,10 +13,10 @@
       <div class="list">
         <ul class="list-items">
           <li><a href="#">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/experience">Experience</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -62,13 +62,14 @@
       src="./assets/arrow.png"
       alt="down"
       class="icon-arrow"
-      onclick="location.href=''"
+      onclick="location.href='#about'"
     />
-    <div class="heading">
-      <h1>About me</h1>
-    </div>
+  
     <div class="about-container">
       <section id="about">
+        <div class="heading">
+          <h1>About me</h1>
+        </div>
         <div class="about">
           <div class="about-image">
             <img src="./assets/about-img.png" alt="" />
@@ -109,12 +110,12 @@
       src="./assets/arrow.png"
       alt="down"
       class="icon-arrow"
-      onclick="location.href='./projects'"
+      onclick="location.href='#experience'"
     />
-    <div class="heading">
-      <h1>Experience</h1>
-    </div>
     <section id="experience">
+      <div class="heading">
+        <h1>Experience</h1>
+      </div>
       <div class="experience-details">
         <div class="experience-about">
           <div class="experience-content">
@@ -207,11 +208,17 @@
         </div>
       </div>
     </section>
-
-    <div class="heading">
-      <h1>My Work</h1>
-    </div>
+    <img
+    src="./assets/arrow.png"
+    alt="down"
+    class="icon-arrow"
+    onclick="location.href='#project'"
+  />
+    
     <section id="project">
+      <div class="heading">
+        <h1>My Work</h1>
+      </div>
       <div class="project-container">
         <div class="project-cards">
           <img
@@ -221,7 +228,7 @@
           />
           <h3>project 1</h3>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-          <a href="">Github link</a>
+          <button class="pro-btn"><a href="">Github link</a></button>
         </div>
         <div class="project-cards">
           <img
@@ -231,7 +238,7 @@
           />
           <h3>project 2</h3>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-          <a href="">Github link</a>
+          <button class="pro-btn"><a href="">Github link</a></button>
         </div>
         <div class="project-cards">
           <img
@@ -241,7 +248,7 @@
           />
           <h3>project 3</h3>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-          <a href="">Github link</a>
+          <button class="pro-btn"><a href="">Github link</a></button>
         </div>
       </div>
     </section>
@@ -249,9 +256,42 @@
       src="./assets/arrow.png"
       alt="down"
       class="icon-arrow"
-      onclick="location.href='./contact'"
+      onclick="location.href='#contact'"
     />
-    
+   
+   <section id="contact">
+    <div class="heading">
+      <h1>Contact me</h1>
+    </div>
+     <div class="con-container">
+         <div class="con-info">
+          <img src="./assets/email-img.png" alt="Email icon">
+          <p><a href="mailto:exampleemail@gmail.com">Email@gmail.com</a></p>
+         </div>
+         <div class="con-info">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon">
+          <p><a href="https://www.linkedin.com/in/arya-bhatkande-69b426277">LinkedIn</a></p>
+         </div>
+         <div class="con-info">
+          <img src="./assets/github.png" alt="github icon">
+          <p><a href="https://github.com/arya-bhatkande?tab=repositories">Github</a></p>
+         </div>
+     </div>
+   </section>
+   <footer>
+    <nav>
+      <div class="list1">
+        <ul class="list-items1">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#project">Projects</a></li>
+        </ul>
+      </div>
+       <p class="footer">Copyright &copy; 2024 Lisa . All right reserved</p>
+    </nav>
+   
+   </footer>
     <script src="script.js"></script>
   </body>
 </html>

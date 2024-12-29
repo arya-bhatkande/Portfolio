@@ -1,55 +1,108 @@
-@media screen and (max-width:1200px){
-    #navbar{
-        display: none;
-    }
+@media screen and (max-width: 1200px) {
+  #navbar {
+    display: none;
+  }
 
-    #hamburger-nav{
-        display: flex;
-    }
+  #hamburger-nav {
+    display: flex;
+  }
 }
 
 @media (max-width: 768px) {
-    .box {
-        width: 100%; /* Make boxes take full width on small screens */
-    }
+  .box {
+    width: 100%; /* Make boxes take full width on small screens */
+  }
 
-    .box img {
-        max-width: 300px; /* Reduce image size for smaller devices */
-    }
+  .box img {
+    max-width: 300px; /* Reduce image size for smaller devices */
+  }
 
-    .box-content{
-        width: 100%;
-        margin: 10px;
-    }
-    .about{
-        padding: 20px;
-        flex-direction: column;
-    }
-    .about-image{
-        margin-right: 0px;
-        margin-bottom: 20px;
-    }
+  .box-content {
+    width: 100%;
+    margin: 10px;
+  }
+ 
 
-    .project-container {
-        /* margin: 0 auto; */
-        justify-content: center;
-        flex-direction: column; 
-       
-    }
-    .project-cards{
-        width: 100%;
-       
-    }
+  .about {
+    flex-direction: column; /* Stack the image and content vertically */
+    height: auto; /* Let the height adjust dynamically */
+  }
 
-  .experience-content{
+  .about-image {
+    margin-right: 0; /* Remove the margin on smaller screens */
+    max-height: 300px; /* Reduce the max height of the image */
+  }
+
+  .about-image img {
+    height: auto; /* Let the image scale dynamically */
+  }
+
+  .about-content {
+    width: 100%; /* Use full width for the content */
+    border: none; /* Optionally remove the border for simplicity */
+  }
+
+  .about-icon {
+    flex-wrap: wrap; /* Allow icons to wrap if necessary */
+    gap: 1rem; /* Reduce the gap between icons */
+    justify-content: center; /* Center icons horizontally */
+  }
+
+  .project-container {
+    /* margin: 0 auto; */
+    justify-content: center;
+    flex-direction: column;
+  }
+  .project-cards {
+    width: 100%;
+  }
+
+  .experience-content {
     margin-left: 50px;
     margin-top: 5px;
     width: 70%;
-   
   }
-    
-  .experience-about{
+
+  .experience-about {
     flex-direction: column;
   }
 
+  .con-container {
+    width: 100%; /* Expand the container to take up more space */
+    flex-direction: row; /* Stack the content vertically */
+    padding: 1rem; /* Increase padding for better spacing */
+    height: 30vh;
+  }
+
+  .con-info {
+    margin: 0;
+    flex-direction: row;
+    gap: 0;
+    padding: 0;
+  }
+
+  .con-info > p > a {
+    font-size: 1rem; /* Reduce font size for smaller screens */
+  }
+
+  footer > nav {
+    flex-direction: column;
+    height: auto; /* Adjust height to fit the content */
+    padding: 1rem;
+  }
+
+  .list-items1 {
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1rem;
+    align-items: center;
+  }
+
+  .list-items1 a {
+    font-size: 1rem;
+  }
+
+  footer > nav > p {
+    font-size: 0.8rem;
+  }
 }
